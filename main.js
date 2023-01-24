@@ -8,18 +8,22 @@ form.addEventListener('submit', function(e){
     const campoA = document.getElementById('campo-a');
     const campoB = document.getElementById('campo-b');
     
-    formEvalido = campoB.value > campoA.value
+    formEvalido = parseInt(campoB.value) > parseInt(campoA.value)
     
    
         if (formEvalido){
-            document.querySelector('.success-message').style.display = 'block';
-
+        
             campoA.value = '';
             campoB.value = '';
-        
+            campoB.classList.add('success');
+            document.querySelector('.success-message').style.display = 'block';
+            
+                   
         } else {
             campoB.style.border = '1px solid red';
             document.querySelector('.error-message').style.display = 'block';
+            campoB.classList.remove('success');
+            document.querySelector('.success-message').style.display = 'none';
         }
 
 })
@@ -37,8 +41,7 @@ campoB.addEventListener('keyup', function(e){
         } else {
             campoB.classList.remove('error');
             document.querySelector('.error-message').style.display = 'none';
-            campoB.classList.add('success');
-            document.querySelector('.success-message').style.display = 'block';
+           
     }
 })
 
