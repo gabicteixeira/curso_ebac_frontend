@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #56194a;
+    padding: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+#contato {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px;
+    font-size: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #390234;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    max-width: 180px;
+
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+
+
+form {
+    max-width: 500px;
+}
+
+
+
+
